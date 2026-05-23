@@ -11,7 +11,7 @@ const allNews = [
     title: '14th Convocation Ceremony Celebrates Academic Excellence',
     excerpt: 'Tansian University held its 14th Convocation Ceremony, celebrating graduates across all six faculties and inaugurating new leadership under Professor Ellis Idemobi.',
     body: 'The 14th Convocation Ceremony of Tansian University was a landmark occasion that recognized the academic achievements of hundreds of graduates from the faculties of Natural & Applied Sciences, Management & Social Sciences, Education, Environmental Sciences, Health Sciences, and Law. The event was graced by dignitaries from across the nation, including representatives from the National Universities Commission (NUC). Professor Ellis Idemobi was formally inaugurated as the new Pro-Chancellor, pledging to advance the university\'s mission of holistic education through the Total Man Concept.',
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80',
+    image: '/black_students_graduating.png',
     featured: true
   },
   {
@@ -21,7 +21,7 @@ const allNews = [
     title: 'New Chancellor Elected: Very Rev. Fr. Dr. ESC Obiorah, SAN',
     excerpt: 'The Board of Trustees elected a new Chancellor to guide the university\'s Catholic mission and governance.',
     body: 'Very Rev. Fr. Dr. ESC Obiorah, SAN, has been elected as the new Chancellor of Tansian University by the Board of Trustees. Father Obiorah brings decades of experience in academic leadership and Catholic spiritual formation. He pledged to uphold the founding vision of the late Rev. Prof. John Bosco Akam and to strengthen the university\'s commitment to moral and intellectual excellence.',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80',
+    image: '/black_student_library.png',
     featured: false
   },
   {
@@ -31,7 +31,7 @@ const allNews = [
     title: 'Post-UTME & Direct Entry Applications Now Open',
     excerpt: 'Applications for the 2025/2026 session are being accepted at both Umunya and Oba campuses.',
     body: 'Tansian University is now accepting applications for the 2025/2026 academic session. Prospective students who chose Tansian University in their UTME can apply for Post-UTME screening. Direct Entry candidates with NCE, ND, or HND qualifications are also welcome. Application forms are available online and at the Registrar\'s offices on both campuses. The screening exercise includes a written assessment and oral interview.',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80',
+    image: '/black_students_graduating.png',
     featured: false
   },
   {
@@ -41,7 +41,7 @@ const allNews = [
     title: 'Postgraduate Programs Expanded with New PhD Tracks',
     excerpt: 'New doctoral programs in Political Science, Computer Science, and Biochemistry now available.',
     body: 'The School of Postgraduate Studies has announced the expansion of its doctoral offerings. New PhD programs are now available in Political Science, Computer Science, and Biochemistry. These programs are designed to produce cutting-edge researchers who can contribute to Nigeria\'s development. The university has also upgraded its research laboratories and library resources to support advanced research.',
-    image: 'https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80',
+    image: '/black_students_graduating.png',
     featured: false
   },
   {
@@ -51,7 +51,7 @@ const allNews = [
     title: 'Tansian Warriors Win Inter-University Football Championship',
     excerpt: 'The Tansian Warriors football team clinched the South-East Inter-University Football Championship title.',
     body: 'The Tansian Warriors football team delivered a stunning performance at the South-East Inter-University Football Championship, defeating five rival universities to claim the championship trophy. The final match, held at the Umunya campus sports complex, saw the Warriors triumph 3-1. Coach Emmanuel Obi praised the team\'s discipline and teamwork, attributes he credits to the university\'s emphasis on character development alongside physical excellence.',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600&q=80',
+    image: '/black_student_female.png',
     featured: false
   },
   {
@@ -61,7 +61,7 @@ const allNews = [
     title: 'Founder\'s Day Memorial: Remembering Rev. Prof. John Bosco Akam',
     excerpt: 'The university community gathered to honor the life and legacy of its visionary founder.',
     body: 'The annual Founder\'s Day Memorial brought together students, staff, alumni, and community members to celebrate the enduring legacy of the late Rev. Prof. John Bosco Akam. The day featured a special Mass at the Christian Spiritual Center, an academic symposium on the Total Man Concept, and a cultural showcase by students. Scholarships were awarded to outstanding students in Father Akam\'s honor.',
-    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80',
+    image: '/black_student_library.png',
     featured: false
   },
   {
@@ -71,7 +71,7 @@ const allNews = [
     title: 'Annual Inter-Faculty Sports Festival Opens with Grand Ceremony',
     excerpt: 'Six faculties compete in athletics, basketball, volleyball, and chess during the week-long festival.',
     body: 'The Annual Inter-Faculty Sports Festival kicked off with a colorful opening ceremony at the Umunya sports complex. All six faculties paraded their athletes in a display of unity and healthy competition. The week-long event features competitions in athletics, football, basketball, volleyball, table tennis, and chess. The festival is a cornerstone of campus life, promoting physical fitness and camaraderie among students.',
-    image: 'https://images.unsplash.com/photo-1461896836934-bd45ba8c8e19?w=600&q=80',
+    image: '/black_students_graduating.png',
     featured: false
   },
   {
@@ -81,7 +81,7 @@ const allNews = [
     title: 'NUC Grants Full Accreditation to Faculty of Law Programs',
     excerpt: 'The National Universities Commission has granted full accreditation status to Tansian\'s law programs.',
     body: 'The National Universities Commission (NUC) has granted full accreditation to the programs offered by the Faculty of Law at Tansian University\'s Oba campus. This milestone recognizes the quality of legal education, the adequacy of facilities including the moot court, and the qualifications of the faculty. Graduates of the program are eligible to proceed to the Nigerian Law School for their Bar examinations.',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80',
+    image: '/black_students_campus.png',
     featured: false
   }
 ];

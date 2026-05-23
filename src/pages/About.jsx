@@ -73,7 +73,7 @@ export default function About() {
             <div>
               <div style={{ position: 'relative' }}>
                 <img 
-                  src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&q=80" 
+                  src="/black_student_female.png" 
                   alt="Late Rev. Prof. John Bosco Akam" 
                   className="about-image-main" 
                   style={{ width: '100%', aspectRatio: '1', borderRadius: '8px', objectPosition: 'center 15%' }} 
@@ -188,12 +188,12 @@ export default function About() {
             
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
               <img 
-                src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&q=80" 
+                src="/black_student_library.png" 
                 alt="Umunya Campus Buildings" 
                 style={{ width: '100%', aspectRatio: '0.8', borderRadius: '4px', objectFit: 'cover' }} 
               />
               <img 
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&q=80" 
+                src="/black_student_library.png" 
                 alt="Student Classroom Oba Campus" 
                 style={{ width: '100%', aspectRatio: '0.8', borderRadius: '4px', objectFit: 'cover', marginTop: '30px' }} 
               />

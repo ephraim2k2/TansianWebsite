@@ -62,38 +62,38 @@ export default function CampusLife() {
       desc: "Rooted in our rich Catholic heritage, the Spiritual Center serves as the spiritual heartbeat of Tansian. Through daily Mass, counseling, and quiet reflection, we nurture character in alignment with the Total Man Concept.",
       features: ["Daily Chapel Services", "Blessed Tansi Devotional Hours", "Ecumenical & Spiritual Mentoring"],
       icon: <Flame size={28} />,
-      image: "https://images.unsplash.com/photo-1548625361-155deee223cb?w=600&q=80"
+      image: "/black_students_campus.png"
     },
     {
       title: "Premium Accommodation",
       desc: "A secure home away from home. Our modern, separate male and female hostels in Umunya and Oba offer comfortable study environments, 24/7 power backup, high-speed Wi-Fi, and dedicated live-in wardens.",
       features: ["24/7 Secured Boundaries", "Laundry & Common Study Areas", "Oba & Umunya Site Availability"],
       icon: <HomeIcon size={28} />,
-      image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80"
+      image: "/black_student_library.png"
     },
     {
       title: "Athletics & Tansian Warriors",
       desc: "Physical fitness is key to the Total Man development. Our student athletes excel in football, basketball, track, and lawn tennis. Take part in regional leagues and regular inter-faculty tournament cups.",
       features: ["Fully Equipped Sports Complex", "Tansian Warriors Soccer Team", "Sports Talent Scholarships"],
       icon: <Trophy size={28} />,
-      image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600&q=80"
+      image: "/black_student_female.png"
     },
     {
       title: "Clubs & Leadership Societies",
       desc: "Step out of your comfort zone and lead. Students actively participate in the Debate Society, ICT Innovators Hub, Red Cross, Student Judicial Moots, and creative performing arts troupes.",
       features: ["Student Leadership Council", "ICT Hackathons & Incubators", "Drama, Music & Poetry Clubs"],
       icon: <Compass size={28} />,
-      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&q=80"
+      image: "/black_student_female.png"
     }
   ];
 
   const galleryImages = [
-    { url: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&q=80", title: "Central Plaza" },
-    { url: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5c?w=500&q=80", title: "Modern Library Complex" },
-    { url: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=500&q=80", title: "Faculty Moot Court" },
-    { url: "https://images.unsplash.com/photo-1562774053-701939374585?w=500&q=80", title: "Natural Science Labs" },
-    { url: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=500&q=80", title: "Umunya Main Gate" },
-    { url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&q=80", title: "Auditorium Hall" }
+    { url: "/black_student_female.png", title: "Central Plaza" },
+    { url: "/black_students_graduating.png", title: "Modern Library Complex" },
+    { url: "/black_students_campus.png", title: "Faculty Moot Court" },
+    { url: "/black_students_campus.png", title: "Natural Science Labs" },
+    { url: "/black_student_female.png", title: "Umunya Main Gate" },
+    { url: "/black_students_campus.png", title: "Auditorium Hall" }
   ];
 
   return (
@@ -143,7 +143,7 @@ export default function CampusLife() {
             <div>
               <div style={{ position: 'relative' }}>
                 <img
-                  src="https://images.unsplash.com/photo-1594750852563-5ed8e0421d40?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="/black_student_library.png"
                   alt="Vibrant Student Community"
                   style={{ width: '100%', aspectRatio: '1.1', borderRadius: '8px', objectFit: 'cover', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
                 />

@@ -335,8 +335,8 @@ export default function Home() {
         <div className="section-inner">
           <div className="about-grid">
             <div className="about-left">
-              <img src="https://images.unsplash.com/photo-1594750852563-5ed8e0421d40?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tansian University Students" className="about-image-main" />
-              <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&q=80" alt="Campus Building" className="about-image-accent" />
+              <img src="/black_students_graduating.png" alt="Tansian University Students" className="about-image-main" />
+              <img src="/black_student_library.png" alt="Campus Building" className="about-image-accent" />
               <div className="about-badge">
                 <div className="about-badge-num">16+</div>
                 <div className="about-badge-text">Years of Excellence</div>
@@ -405,43 +405,43 @@ export default function Home() {
                 tag: "Sciences",
                 title: "Natural & Applied Sciences",
                 desc: "Biochemistry, Chemistry, Computer Science, Industrial Chemistry, ICT, Microbiology, Physics & Electronics.",
-                img: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&q=80"
+                img: "/black_students_graduating.png"
               },
               {
                 tag: "Business",
                 title: "Management & Social Sciences",
                 desc: "Accounting, Banking & Finance, Business Administration, Mass Communication, Economics, Political Science, International Relations.",
-                img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80"
+                img: "/black_students_graduating.png"
               },
               {
                 tag: "Education",
                 title: "Faculty of Education",
                 desc: "Special Education, Arts Education, Science Education, and Social Science & Vocational Education with NCE Direct Entry options.",
-                img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80"
+                img: "/black_students_graduating.png"
               },
               {
                 tag: "Built Environment",
                 title: "Environmental Sciences",
                 desc: "Architecture, Estate Management, and Urban & Regional Planning — shaping sustainable communities for tomorrow.",
-                img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80"
+                img: "/black_students_campus.png"
               },
               {
                 tag: "Health",
                 title: "Health Sciences",
                 desc: "Nursing Science, Medical Laboratory Science, and Public Health — training compassionate healthcare professionals.",
-                img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80"
+                img: "/black_student_library.png"
               },
               {
                 tag: "Law",
                 title: "Faculty of Law",
                 desc: "Civil Law program accredited by the Nigerian National Universities Commission (NUC), preparing ethical legal practitioners.",
-                img: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80"
+                img: "/black_student_library.png"
               },
               {
                 tag: "Advanced",
                 title: "Postgraduate Studies",
                 desc: "PGD, M.Sc., MA, and PhD in Accountancy, Business Administration, Journalism, Political Science, Philosophy, Computer Science & more.",
-                img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80"
+                img: "/black_student_library.png"
               }
             ].map((prog, index) => (
               <div className="program-card" key={index}>
@@ -502,7 +502,7 @@ export default function Home() {
           </div>
           <div className="news-grid">
             <div className="news-featured">
-              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80" alt="Convocation" className="news-featured-img" />
+              <img src="/black_student_library.png" alt="Convocation" className="news-featured-img" />
               <div className="news-featured-overlay">
                 <span className="news-featured-tag">Convocation</span>
                 <h3 className="news-featured-title">14th Convocation Ceremony Celebrates Academic Excellence</h3>
@@ -519,19 +519,19 @@ export default function Home() {
                   date: "March 2025",
                   title: "New Chancellor Elected: Very Rev. Fr. Dr. ESC Obiorah, SAN",
                   excerpt: "The Board of Trustees elected a new Chancellor to guide the university's Catholic mission and governance.",
-                  img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=300&q=80"
+                  img: "/black_students_graduating.png"
                 },
                 {
                   date: "January 2025",
                   title: "Post-UTME & Direct Entry Applications Now Open",
                   excerpt: "Applications for the 2025/2026 session are being accepted at both Umunya and Oba campuses.",
-                  img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=300&q=80"
+                  img: "/black_student_female.png"
                 },
                 {
                   date: "December 2024",
                   title: "Postgraduate Programs Expanded with New PhD Tracks",
                   excerpt: "New doctoral programs in Political Science, Computer Science, and Biochemistry now available.",
-                  img: "https://images.unsplash.com/photo-1562774053-701939374585?w=300&q=80"
+                  img: "/black_students_campus.png"
                 }
               ].map((item, i) => (
                 <Link to="/news" className="news-item" key={i}>
