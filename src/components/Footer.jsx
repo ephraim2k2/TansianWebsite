@@ -37,7 +37,7 @@ export default function Footer() {
               <span className="footer-logo-text">Tansian University</span>
             </div>
             <p className="footer-desc">
-              A private Christian university in Umunya, Anambra State, Nigeria. 
+              A private Christian university in Umunya, Anambra State, Nigeria.
               Building knowledge and restoring pride through the Total Man Concept.
             </p>
             <div className="footer-social">
@@ -93,6 +93,10 @@ export default function Footer() {
               </>
             )}
           </div>
+
+        </div>
+        <div className="footer-hero" style={{ textAlign: "center", fontSize: "3rem", fontWeight: "800", margin: "2rem 0", color: "#e0c878" }}>
+          <h1 className="footer-hero-text" style={{ fontSize: "15rem", fontWeight: "400", margin: "2rem 0", color: "#ffffff22" }}>TANSIAN</h1>
         </div>
 
         <div className="footer-bottom">

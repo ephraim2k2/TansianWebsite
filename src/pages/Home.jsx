@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Plus, GraduationCap, BookOpen, Globe, Volume2 } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Plus, GraduationCap, BookOpen, Globe, Volume2, CreditCard, Smartphone, Users, Monitor } from 'lucide-react';
 
 export default function Home() {
   const homeRef = useRef(null);
@@ -19,6 +19,51 @@ export default function Home() {
 
   // FAQ Accordion State
   const [activeFaq, setActiveFaq] = useState(null);
+
+  // Hero Media State
+  const leftImages = [
+    '/black_students_campus.png',
+    '/black_student_female.png',
+    '/black_students_graduating.png'
+  ];
+
+  const rightVideos = [
+    '/0_Student_Woman_1280x720.mp4',
+    '/1474126_People_Technology_1280x720.mp4',
+    '/1476153_People_1280x720.mp4'
+  ];
+
+  const [leftIndex, setLeftIndex] = useState(0);
+  const [leftExitingIndex, setLeftExitingIndex] = useState(null);
+  const [rightIndex, setRightIndex] = useState(0);
+  const [rightExitingIndex, setRightExitingIndex] = useState(null);
+
+  useEffect(() => {
+    const leftTimer = setInterval(() => {
+      setLeftIndex(prev => {
+        setLeftExitingIndex(prev);
+        return (prev + 1) % leftImages.length;
+      });
+    }, 5000);
+    return () => clearInterval(leftTimer);
+  }, [leftImages.length]);
+
+  useEffect(() => {
+    const rightTimer = setTimeout(() => {
+      setRightIndex(prev => {
+        setRightExitingIndex(prev);
+        return (prev + 1) % rightVideos.length;
+      });
+      const interval = setInterval(() => {
+        setRightIndex(prev => {
+          setRightExitingIndex(prev);
+          return (prev + 1) % rightVideos.length;
+        });
+      }, 5000);
+      return () => clearInterval(interval);
+    }, 2500);
+    return () => clearTimeout(rightTimer);
+  }, [rightVideos.length]);
 
   // Auto-rotate announcements
   useEffect(() => {
@@ -217,6 +262,22 @@ export default function Home() {
         }
       });
 
+      // Feature cards animation
+      const featureCards = gsap.utils.toArray('.feature-card');
+      featureCards.forEach((card, index) => {
+        gsap.from(card, {
+          y: 80,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 85%',
+            toggleActions: 'play none none reverse'
+          }
+        });
+      });
+
     }, homeRef);
 
     return () => ctx.revert();
@@ -281,6 +342,29 @@ export default function Home() {
       <section className="hero" id="hero">
         <div className="hero-bg"></div>
         <div className="hero-pattern"></div>
+
+        {/* Left Media Box */}
+        <div className="hero-media-box hero-media-left">
+          {leftImages.map((src, i) => {
+            let className = 'media-item';
+            if (i === leftIndex) className += ' active';
+            else if (i === leftExitingIndex) className += ' exiting';
+            return <img key={i} src={src} className={className} alt="Campus Life" />;
+          })}
+        </div>
+
+        {/* Right Media Box */}
+        <div className="hero-media-box hero-media-right">
+          {rightVideos.map((src, i) => {
+            let className = 'media-item';
+            if (i === rightIndex) className += ' active';
+            else if (i === rightExitingIndex) className += ' exiting';
+            return (
+              <video key={i} src={src} className={className} autoPlay muted loop playsInline />
+            );
+          })}
+        </div>
+
         <div className="hero-content">
           <div className="hero-label">
             <span className="hero-label-line"></span>
@@ -376,6 +460,67 @@ export default function Home() {
                   <div className="stat-label">Campuses</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Tansian Section */}
+      <section className="features-section" id="features">
+        <div className="section-inner">
+          <div className="features-grid">
+            <div className="features-sticky-left">
+              <div className="section-label">
+                <span className="section-label-line"></span>
+                <span>The Tansian Advantage</span>
+              </div>
+              <h2 className="features-title">What Makes Tansian the Right Choice?</h2>
+              <p className="features-desc">
+                We've built a modern, seamless ecosystem designed to put you first. From instant digital payments to an immersive campus life, experience education without borders.
+              </p>
+            </div>
+            <div className="features-cards-right">
+              
+              <div className="feature-card">
+                <div className="feature-icon-wrapper">
+                  <CreditCard size={32} />
+                </div>
+                <h3>Seamless School Fees Payment</h3>
+                <p>
+                  No more bank queues. Make payments anywhere, anytime using our secure digital payment gateway. Track your transactions and instantly receive verifiable receipts directly via WhatsApp.
+                </p>
+              </div>
+
+              <div className="feature-card">
+                <div className="feature-icon-wrapper">
+                  <Monitor size={32} />
+                </div>
+                <h3>Unified Student Portal</h3>
+                <p>
+                  A powerful, centralized dashboard that makes academic life effortless. Register for courses, check your grades, access study materials, and manage your schedule all in one place.
+                </p>
+              </div>
+
+              <div className="feature-card">
+                <div className="feature-icon-wrapper">
+                  <Smartphone size={32} />
+                </div>
+                <h3>Digital Smart Cards</h3>
+                <p>
+                  Experience the future of campus security and identity. Our NFC-enabled digital smart cards provide secure access control to university facilities, library access, and identity verification.
+                </p>
+              </div>
+
+              <div className="feature-card">
+                <div className="feature-icon-wrapper">
+                  <Users size={32} />
+                </div>
+                <h3>Vibrant Campus Experience</h3>
+                <p>
+                  Beyond academics, immerse yourself in a vibrant, community-driven environment. Engage in extracurricular activities, join student clubs, and build lifelong friendships on our state-of-the-art campuses.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
