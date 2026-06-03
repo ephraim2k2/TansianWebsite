@@ -61,7 +61,7 @@ export default function About() {
                 Tansian University (TANU) was founded on May 17, 2009, by the late <b>Rev. Prof. John Bosco Akam</b>, a renowned Catholic priest, philanthropist, and academic visionary. Inspired by the holy life of Blessed Cyprian Michael Iwene Tansi, Father Akam set out to build an institution that would rescue high moral values and restore the intellectual pride of the African youth.
               </p>
               <p className="about-text" style={{ marginBottom: '24px' }}>
-                TANU is built upon the <b>"Total Man Concept"</b>—a philosophy that emphasizes that education is only complete when the human intellect is refined in harmony with moral rectitude, spiritual discipline, and professional skills. Our university trains students to excel academically while instilling the fear of God, accountability, and responsibility.
+                TANU is built upon the <b>"Total Man Concept"</b>—a philosophy that emphasizes that education is only complete when the human intellect is refined in harmony with moral rectitude, spiritual discipline, and professional skills. Our university trains students to excel academically while instilling the fear of God,  accountability, and responsibility.
               </p>
               <div className="about-mission" style={{ padding: '30px' }}>
                 <p className="about-mission-text" style={{ fontSize: '1.25rem', color: 'var(--primary-light)' }}>
