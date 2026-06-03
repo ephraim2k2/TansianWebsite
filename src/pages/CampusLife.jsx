@@ -62,38 +62,38 @@ export default function CampusLife() {
       desc: "Rooted in our rich Catholic heritage, the Spiritual Center serves as the spiritual heartbeat of Tansian. Through daily Mass, counseling, and quiet reflection, we nurture character in alignment with the Total Man Concept.",
       features: ["Daily Chapel Services", "Blessed Tansi Devotional Hours", "Ecumenical & Spiritual Mentoring"],
       icon: <Flame size={28} />,
-      image: "/black_students_campus.png"
+      image: "/ Spiritual.jpeg"
     },
     {
       title: "Premium Accommodation",
       desc: "A secure home away from home. Our modern, separate male and female hostels in Umunya and Oba offer comfortable study environments, 24/7 power backup, high-speed Wi-Fi, and dedicated live-in wardens.",
       features: ["24/7 Secured Boundaries", "Laundry & Common Study Areas", "Oba & Umunya Site Availability"],
       icon: <HomeIcon size={28} />,
-      image: "/black_student_library.png"
+      image: "/hstel.png"
     },
     {
       title: "Athletics & Tansian Warriors",
       desc: "Physical fitness is key to the Total Man development. Our student athletes excel in football, basketball, track, and lawn tennis. Take part in regional leagues and regular inter-faculty tournament cups.",
       features: ["Fully Equipped Sports Complex", "Tansian Warriors Soccer Team", "Sports Talent Scholarships"],
       icon: <Trophy size={28} />,
-      image: "/black_student_female.png"
+      image: "/Athletics.png"
     },
     {
       title: "Clubs & Leadership Societies",
       desc: "Step out of your comfort zone and lead. Students actively participate in the Debate Society, ICT Innovators Hub, Red Cross, Student Judicial Moots, and creative performing arts troupes.",
       features: ["Student Leadership Council", "ICT Hackathons & Incubators", "Drama, Music & Poetry Clubs"],
       icon: <Compass size={28} />,
-      image: "/black_student_female.png"
+      image: "/Clubs_&_Leadership_Societies.png"
     }
   ];
 
   const galleryImages = [
-    { url: "/black_student_female.png", title: "Central Plaza" },
-    { url: "/black_students_graduating.png", title: "Modern Library Complex" },
-    { url: "/black_students_campus.png", title: "Faculty Moot Court" },
-    { url: "/black_students_campus.png", title: "Natural Science Labs" },
-    { url: "/black_student_female.png", title: "Umunya Main Gate" },
-    { url: "/black_students_campus.png", title: "Auditorium Hall" }
+    { url: "/Management2.png", title: "Central Plaza" },
+    { url: "/Library.png", title: "Modern Library Complex" },
+    { url: "/FacultyofLaw.jpeg", title: "Faculty Moot Court" },
+    { url: "/Natural_Science_Labs.jpeg", title: "Natural Science Labs" },
+    { url: "/Gemini_Generated_Image_bhq8n4bhq8n4bhq8.png", title: "Umunya Main Gate" },
+    { url: "/hall.png", title: "Auditorium Hall" }
   ];
 
   return (

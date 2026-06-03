@@ -11,7 +11,7 @@ const allNews = [
     title: '14th Convocation Ceremony Celebrates Academic Excellence',
     excerpt: 'Tansian University held its 14th Convocation Ceremony, celebrating graduates across all six faculties and inaugurating new leadership under Professor Ellis Idemobi.',
     body: 'The 14th Convocation Ceremony of Tansian University was a landmark occasion that recognized the academic achievements of hundreds of graduates from the faculties of Natural & Applied Sciences, Management & Social Sciences, Education, Environmental Sciences, Health Sciences, and Law. The event was graced by dignitaries from across the nation, including representatives from the National Universities Commission (NUC). Professor Ellis Idemobi was formally inaugurated as the new Pro-Chancellor, pledging to advance the university\'s mission of holistic education through the Total Man Concept.',
-    image: '/black_students_graduating.png',
+    image: '/students.jpg',
     featured: true
   },
   {
@@ -97,7 +97,7 @@ export default function News() {
   const filteredNews = allNews.filter(item => {
     const matchesCat = activeCategory === 'All' || item.category === activeCategory;
     const matchesSearch = item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          item.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+      item.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCat && matchesSearch;
   });
 
@@ -317,8 +317,10 @@ export default function News() {
                   <h3 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.2rem', color: 'var(--primary)', marginBottom: '10px', lineHeight: '1.35' }}>
                     {article.title}
                   </h3>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.55', marginBottom: '20px',
-                    display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                  <p style={{
+                    fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: '1.55', marginBottom: '20px',
+                    display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden'
+                  }}>
                     {article.excerpt}
                   </p>
                   <span className="program-card-link">

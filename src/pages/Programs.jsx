@@ -8,23 +8,27 @@ export default function Programs() {
   const [searchQuery, setSearchQuery] = useState('');
   const pageRef = useRef(null);
 
-  // Scroll animate entry of list
+  // Run ONCE on mount — animates tab buttons only
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.faculty-tabs > button', {
-        y: 20,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.08,
-        ease: 'power3.out'
-      });
-      gsap.from('.program-list-grid > *', {
-        y: 30,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.05,
-        ease: 'power3.out'
-      });
+      gsap.fromTo(
+        '.faculty-tabs > button',
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: 'power3.out' }
+      );
+    }, pageRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  // Run on tab change — animates course cards only
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.program-list-grid > *',
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, ease: 'power3.out' }
+      );
     }, pageRef);
 
     return () => ctx.revert();
@@ -32,7 +36,6 @@ export default function Programs() {
 
   const faculties = [
     {
-      id: 0,
       name: "Natural & Applied Sciences",
       icon: <Award size={18} />,
       tagline: "Unlocking innovation, analytical research, and digital transformation.",
@@ -47,7 +50,6 @@ export default function Programs() {
       ]
     },
     {
-      id: 1,
       name: "Management & Social Sciences",
       icon: <BookOpen size={18} />,
       tagline: "Developing corporate leaders, public policy experts, and ethical communicators.",
@@ -63,7 +65,6 @@ export default function Programs() {
       ]
     },
     {
-      id: 2,
       name: "Health Sciences",
       icon: <GraduationCap size={18} />,
       tagline: "Training compassionate health professionals to engineer clinical care.",
@@ -75,7 +76,6 @@ export default function Programs() {
       ]
     },
     {
-      id: 3,
       name: "Faculty of Law",
       icon: <Award size={18} />,
       tagline: "Molding advocates of justice and legal reformers.",
@@ -85,7 +85,6 @@ export default function Programs() {
       ]
     },
     {
-      id: 4,
       name: "Environmental Sciences",
       icon: <BookOpen size={18} />,
       tagline: "Designing structural, sustainable habitats for tomorrow's environment.",
@@ -97,7 +96,6 @@ export default function Programs() {
       ]
     },
     {
-      id: 5,
       name: "Faculty of Education",
       icon: <GraduationCap size={18} />,
       tagline: "Preparing educators to inspire intellectual growth and vocational skills.",
@@ -109,7 +107,6 @@ export default function Programs() {
       ]
     },
     {
-      id: 6,
       name: "Postgraduate School",
       icon: <GraduationCap size={18} />,
       tagline: "Advancing scholarly expertise, doctoral research, and corporate credentials.",
@@ -124,7 +121,6 @@ export default function Programs() {
     }
   ];
 
-  // Helper search and filter logic
   const filteredCourses = faculties[activeTab].courses.filter(course =>
     course.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -197,14 +193,14 @@ export default function Programs() {
             borderBottom: '1px solid var(--light-gray)',
             paddingBottom: '20px'
           }}>
-            {faculties.map((fac) => (
+            {faculties.map((fac, i) => (
               <button
-                key={fac.id}
-                onClick={() => { setActiveTab(fac.id); setSearchQuery(''); }}
+                key={i}
+                onClick={() => { setActiveTab(i); setSearchQuery(''); }}
                 style={{
                   padding: '12px 24px',
-                  background: activeTab === fac.id ? 'var(--primary)' : 'var(--off-white)',
-                  color: activeTab === fac.id ? 'var(--white)' : 'var(--text-light)',
+                  background: activeTab === i ? 'var(--primary)' : 'var(--off-white)',
+                  color: activeTab === i ? 'var(--white)' : 'var(--text-light)',
                   border: '1px solid var(--border)',
                   borderRadius: '4px',
                   cursor: 'pointer',
@@ -280,7 +276,6 @@ export default function Programs() {
                         borderRadius: '2px',
                         textTransform: 'uppercase'
                       }}>{course.degree}</span>
-                      
                       <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
                         <Calendar size={14} color="var(--accent)" />
                         <span>{course.duration}</span>
@@ -290,7 +285,7 @@ export default function Programs() {
                     <h4 style={{ fontFamily: 'Playfair Display, serif', fontSize: '1.3rem', color: 'var(--primary)', marginBottom: '12px' }}>
                       {course.name}
                     </h4>
-                    
+
                     <div style={{ borderTop: '1px solid var(--light-gray)', paddingTop: '14px', marginTop: '14px' }}>
                       <span style={{ fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', color: 'var(--text-light)', display: 'block', marginBottom: '4px' }}>
                         Minimum Requirements

@@ -58,10 +58,10 @@ export default function About() {
               </div>
               <h2 className="about-title" style={{ fontSize: '2.5rem' }}>The Legacy of Reverend Father Akam</h2>
               <p className="about-text" style={{ fontSize: '1.1rem', marginBottom: '20px' }}>
-                Tansian University (TANU) was founded on May 17, 2009, by the late **Rev. Prof. John Bosco Akam**, a renowned Catholic priest, philanthropist, and academic visionary. Inspired by the holy life of Blessed Cyprian Michael Iwene Tansi, Father Akam set out to build an institution that would rescue high moral values and restore the intellectual pride of the African youth.
+                Tansian University (TANU) was founded on May 17, 2009, by the late <b>Rev. Prof. John Bosco Akam</b>, a renowned Catholic priest, philanthropist, and academic visionary. Inspired by the holy life of Blessed Cyprian Michael Iwene Tansi, Father Akam set out to build an institution that would rescue high moral values and restore the intellectual pride of the African youth.
               </p>
               <p className="about-text" style={{ marginBottom: '24px' }}>
-                TANU is built upon the **"Total Man Concept"**—a philosophy that emphasizes that education is only complete when the human intellect is refined in harmony with moral rectitude, spiritual discipline, and professional skills. Our university trains students to excel academically while instilling the fear of God, accountability, and responsibility.
+                TANU is built upon the <b>"Total Man Concept"</b>—a philosophy that emphasizes that education is only complete when the human intellect is refined in harmony with moral rectitude, spiritual discipline, and professional skills. Our university trains students to excel academically while instilling the fear of God, accountability, and responsibility.
               </p>
               <div className="about-mission" style={{ padding: '30px' }}>
                 <p className="about-mission-text" style={{ fontSize: '1.25rem', color: 'var(--primary-light)' }}>
@@ -73,7 +73,7 @@ export default function About() {
             <div>
               <div style={{ position: 'relative' }}>
                 <img 
-                  src="/black_student_female.png" 
+                  src="/fatherakam.png" 
                   alt="Late Rev. Prof. John Bosco Akam" 
                   className="about-image-main" 
                   style={{ width: '100%', aspectRatio: '1', borderRadius: '8px', objectPosition: 'center 15%' }} 
@@ -193,7 +193,7 @@ export default function About() {
                 style={{ width: '100%', aspectRatio: '0.8', borderRadius: '4px', objectFit: 'cover' }} 
               />
               <img 
-                src="/black_student_library.png" 
+                src="/black_student_librarye.png" 
                 alt="Student Classroom Oba Campus" 
                 style={{ width: '100%', aspectRatio: '0.8', borderRadius: '4px', objectFit: 'cover', marginTop: '30px' }} 
               />

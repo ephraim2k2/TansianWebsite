@@ -95,7 +95,7 @@ export default function Footer() {
           </div>
 
         </div>
-        <div className="footer-hero" style={{ textAlign: "center", fontSize: "3rem", fontWeight: "800", margin: "2rem 0", color: "#e0c878" }}>
+        <div className="footer-hero">
           <h1 className="footer-hero-text" style={{ fontSize: "15rem", fontWeight: "400", margin: "2rem 0", color: "#ffffff22" }}>TANSIAN</h1>
         </div>
 

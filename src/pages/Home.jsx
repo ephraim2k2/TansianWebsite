@@ -22,9 +22,9 @@ export default function Home() {
 
   // Hero Media State
   const leftImages = [
-    '/black_students_campus.png',
-    '/black_student_female.png',
-    '/black_students_graduating.png'
+    '/monument.jpg',
+    '/students.jpg',
+    '/monument2.png'
   ];
 
   const rightVideos = [
@@ -419,8 +419,8 @@ export default function Home() {
         <div className="section-inner">
           <div className="about-grid">
             <div className="about-left">
-              <img src="/black_students_graduating.png" alt="Tansian University Students" className="about-image-main" />
-              <img src="/black_student_library.png" alt="Campus Building" className="about-image-accent" />
+              <img src="/monument.jpg" alt="Tansian University Students" className="about-image-main" />
+              <img src="/students.jpg" alt="Campus Building" className="about-image-accent" />
               <div className="about-badge">
                 <div className="about-badge-num">16+</div>
                 <div className="about-badge-text">Years of Excellence</div>
@@ -480,7 +480,7 @@ export default function Home() {
               </p>
             </div>
             <div className="features-cards-right">
-              
+
               <div className="feature-card">
                 <div className="feature-icon-wrapper">
                   <CreditCard size={32} />
@@ -550,37 +550,38 @@ export default function Home() {
                 tag: "Sciences",
                 title: "Natural & Applied Sciences",
                 desc: "Biochemistry, Chemistry, Computer Science, Industrial Chemistry, ICT, Microbiology, Physics & Electronics.",
-                img: "/black_students_graduating.png"
+                img: "/black_student_librarye.png"
               },
               {
                 tag: "Business",
                 title: "Management & Social Sciences",
                 desc: "Accounting, Banking & Finance, Business Administration, Mass Communication, Economics, Political Science, International Relations.",
-                img: "/black_students_graduating.png"
+                img: "/Management2.png"
               },
-              {
-                tag: "Education",
-                title: "Faculty of Education",
-                desc: "Special Education, Arts Education, Science Education, and Social Science & Vocational Education with NCE Direct Entry options.",
-                img: "/black_students_graduating.png"
-              },
+        
               {
                 tag: "Built Environment",
                 title: "Environmental Sciences",
                 desc: "Architecture, Estate Management, and Urban & Regional Planning — shaping sustainable communities for tomorrow.",
-                img: "/black_students_campus.png"
+                img: "/Environmental.png"
+              },
+                    {
+                tag: "Education",
+                title: "Faculty of Education",
+                desc: "Special Education, Arts Education, Science Education, and Social Science & Vocational Education with NCE Direct Entry options.",
+                img: "/Education.png"
               },
               {
                 tag: "Health",
                 title: "Health Sciences",
                 desc: "Nursing Science, Medical Laboratory Science, and Public Health — training compassionate healthcare professionals.",
-                img: "/black_student_library.png"
+                img: "/Health.png"
               },
               {
                 tag: "Law",
                 title: "Faculty of Law",
                 desc: "Civil Law program accredited by the Nigerian National Universities Commission (NUC), preparing ethical legal practitioners.",
-                img: "/black_student_library.png"
+                img: "/FacultyofLaw.jpeg"
               },
               {
                 tag: "Advanced",
@@ -647,7 +648,7 @@ export default function Home() {
           </div>
           <div className="news-grid">
             <div className="news-featured">
-              <img src="/black_student_library.png" alt="Convocation" className="news-featured-img" />
+              <img src="/students.jpg" alt="Convocation" className="news-featured-img" />
               <div className="news-featured-overlay">
                 <span className="news-featured-tag">Convocation</span>
                 <h3 className="news-featured-title">14th Convocation Ceremony Celebrates Academic Excellence</h3>
