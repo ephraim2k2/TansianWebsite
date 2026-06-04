@@ -51,7 +51,7 @@ const allNews = [
     title: 'Tansian Warriors Win Inter-University Football Championship',
     excerpt: 'The Tansian Warriors football team clinched the South-East Inter-University Football Championship title.',
     body: 'The Tansian Warriors football team delivered a stunning performance at the South-East Inter-University Football Championship, defeating five rival universities to claim the championship trophy. The final match, held at the Umunya campus sports complex, saw the Warriors triumph 3-1. Coach Emmanuel Obi praised the team\'s discipline and teamwork, attributes he credits to the university\'s emphasis on character development alongside physical excellence.',
-    image: '/black_student_female.png',
+    image: '/black_student_librarye.png',
     featured: false
   },
   {
