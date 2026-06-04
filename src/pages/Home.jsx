@@ -671,7 +671,7 @@ export default function Home() {
                   date: "January 2025",
                   title: "Post-UTME & Direct Entry Applications Now Open",
                   excerpt: "Applications for the 2025/2026 session are being accepted at both Umunya and Oba campuses.",
-                  img: "/black_student_female.png"
+                  img: "/black_student_librarye.png"
                 },
                 {
                   date: "December 2024",
