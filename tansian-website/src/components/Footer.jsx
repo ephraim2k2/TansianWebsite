@@ -57,6 +57,7 @@ export default function Footer() {
               <Link to="/about">University Leadership</Link>
               <Link to="/campus-life">Campus Locations</Link>
               <Link to="/campus-life">Facilities</Link>
+              <Link to="/contact">Contact Us</Link>
             </div>
           </div>
 

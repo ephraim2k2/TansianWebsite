@@ -25,7 +25,7 @@ export default function InfoTopBar() {
           <span>NUC Fully Accredited</span>
         </div>
         <Link to="/admissions" className="info-topbar-link">
-          Apply Online
+            Portal
         </Link>
       </div>
     </div>

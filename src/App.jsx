@@ -18,6 +18,8 @@ import CampusLife from './pages/CampusLife';
 import News from './pages/News';
 import Admissions from './pages/Admissions';
 import FAQ from './pages/FAQ';
+import PrivacyPolicy from './pages/prvPolicy';
+import Contact from './pages/Contact';
 
 import './App.css';
 
@@ -71,6 +73,8 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />

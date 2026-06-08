@@ -18,6 +18,8 @@ import CampusLife from './pages/CampusLife';
 import News from './pages/News';
 import Admissions from './pages/Admissions';
 import FAQ from './pages/FAQ';
+import PrivacyPolicy from './pages/prvPolicy';
+import Contact from './pages/Contact';
 
 import './App.css';
 
@@ -26,10 +28,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   useEffect(() => {
-    // Initialize Lenis smooth scroll
     const lenis = new Lenis({
-      duration: 1.8, // Slightly higher duration for extra luxurious "slow scroll"
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // High inertia easing function
+      duration: 1.8,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
       gestureOrientation: 'vertical',
       smoothWheel: true,
@@ -37,18 +38,14 @@ function App() {
       touchMultiplier: 2,
     });
 
-    // Update ScrollTrigger on Lenis scroll
     lenis.on('scroll', () => {
       ScrollTrigger.update();
     });
 
-    // Sync Lenis frame-perfectly with GSAP's ticker
     const tickerUpdate = (time) => {
       lenis.raf(time * 1000);
     };
     gsap.ticker.add(tickerUpdate);
-
-    // Disable lag smoothing to prevent visual desync during rendering
     gsap.ticker.lagSmoothing(0);
 
     return () => {
@@ -71,6 +68,8 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />
