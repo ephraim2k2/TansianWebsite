@@ -1815,3 +1815,150 @@ section {
         padding: 32px;
     }
 }
+
+/* ===== MEGA MENU ===== */
+.nav-item-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-mega-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    background: var(--white);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 999;
+    padding: 40px 5vw;
+    border-top: 1px solid var(--light-gray);
+    cursor: default;
+}
+
+.nav-item-dropdown:hover .nav-mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.navbar.scrolled .nav-mega-menu,
+.navbar.inner-page .nav-mega-menu {
+    top: 80px;
+}
+
+.mega-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.mega-card {
+    background: var(--white);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 16px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+}
+
+.mega-card:hover {
+    background: var(--off-white);
+    border-color: var(--border);
+}
+
+.mega-card-img-wrapper {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--light-gray);
+}
+
+.mega-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mega-card:hover .mega-card-img {
+    transform: scale(1.05);
+}
+
+.mega-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.mega-card-icon {
+    color: var(--text-muted);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mega-card:hover .mega-card-icon {
+    transform: translate(2px, -2px);
+    color: var(--accent);
+}
+
+.mega-card-title {
+    font-size: 1.1rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.mega-card-desc {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.mobile-hub-section {
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-hub-title {
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mobile-hub-link {
+    display: block;
+    color: var(--white);
+    padding: 8px 0;
+    font-size: 1.05rem;
+    opacity: 0.85;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.mobile-hub-link:hover {
+    opacity: 1;
+    color: var(--accent);
+}
